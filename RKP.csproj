@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68A1EB13-5153-4FCC-8FD6-C9F4F10D26EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RKP</RootNamespace>
+    <AssemblyName>RKP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Hbm.Api.Common, Version=6.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HBM.CommonAPI.6.2.0.134\lib\net4\Hbm.Api.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Hbm.Api.GenericStreaming, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HBM.CommonAPI.6.2.0.134\lib\net4\Hbm.Api.GenericStreaming.dll</HintPath>
+    </Reference>
+    <Reference Include="Hbm.Api.LabVIEW, Version=6.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HBM.CommonAPI.6.2.0.134\lib\net4\Hbm.Api.LabVIEW.dll</HintPath>
+    </Reference>
+    <Reference Include="Hbm.Api.Logging, Version=6.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HBM.CommonAPI.6.2.0.134\lib\net4\Hbm.Api.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Hbm.Api.Mgc, Version=6.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HBM.CommonAPI.6.2.0.134\lib\net4\Hbm.Api.Mgc.dll</HintPath>
+    </Reference>
+    <Reference Include="Hbm.Api.Pmx, Version=6.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HBM.CommonAPI.6.2.0.134\lib\net4\Hbm.Api.Pmx.dll</HintPath>
+    </Reference>
+    <Reference Include="Hbm.Api.QuantumX, Version=6.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HBM.CommonAPI.6.2.0.134\lib\net4\Hbm.Api.QuantumX.dll</HintPath>
+    </Reference>
+    <Reference Include="Hbm.Api.Scan, Version=6.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HBM.CommonAPI.6.2.0.134\lib\net4\Hbm.Api.Scan.dll</HintPath>
+    </Reference>
+    <Reference Include="Hbm.Api.SensorDB, Version=6.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HBM.CommonAPI.6.2.0.134\lib\net4\Hbm.Api.SensorDB.dll</HintPath>
+    </Reference>
+    <Reference Include="Hbm.Api.Utils, Version=6.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HBM.CommonAPI.6.2.0.134\lib\net4\Hbm.Api.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NModbus, Version=3.0.58.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\NModbus.3.0.58\lib\net46\NModbus.dll</HintPath>
+    </Reference>
+    <Reference Include="NModbus4, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\NModbus4.2.1.0\lib\net40\NModbus4.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpJet, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SharpJet.1.1.0\lib\SharpJet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="websocket-sharp, Version=1.0.2.32519, Culture=neutral, PublicKeyToken=5660b08a1845a91e, processorArchitecture=MSIL">
+      <HintPath>packages\WebSocketSharp-NonPreRelease.1.0.0\lib\net35\websocket-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Logger.cs" />
+    <Compile Include="Controller\MainClass.cs" />
+    <Compile Include="Data\ComPort.cs" />
+    <Compile Include="Data\DataCreator\OneComForAll.cs" />
+    <Compile Include="Data\DataCreator\OneComForIndicatorOnePeref.cs" />
+    <Compile Include="Data\DataCreator\OneMGCpluse.cs" />
+    <Compile Include="Data\Indik\Indikator.cs" />
+    <Compile Include="Data\Indik\KV307.cs" />
+    <Compile Include="Data\Indik\MGCPluse.cs" />
+    <Compile Include="Data\Indik\MGCPluseData.cs" />
+    <Compile Include="Data\MeakerData.cs" />
+    <Compile Include="Data\ModBusShluse.cs" />
+    <Compile Include="Data\Peref\ESQ760.cs" />
+    <Compile Include="Data\Peref\SZM.cs" />
+    <Compile Include="Measure\MeasError.cs" />
+    <Compile Include="Measure\MeasReduceError.cs" />
+    <Compile Include="Measure\MeasRKP.cs" />
+    <Compile Include="Measure\MeasZero.cs" />
+    <Compile Include="Model\Chart\ChartSetModel.cs" />
+    <Compile Include="Model\Chart\Point.cs" />
+    <Compile Include="Model\LoadCell.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\BalanceZeroBridgeForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BalanceZeroBridgeForms.Designer.cs">
+      <DependentUpon>BalanceZeroBridgeForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CalkResistirForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CalkResistirForm.Designer.cs">
+      <DependentUpon>CalkResistirForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExamForm.Designer.cs">
+      <DependentUpon>ExamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoadCellSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoadCellSettingsForm.Designer.cs">
+      <DependentUpon>LoadCellSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LogForm.Designer.cs">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\BalanceZeroBridgeForms.resx">
+      <DependentUpon>BalanceZeroBridgeForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CalkResistirForm.resx">
+      <DependentUpon>CalkResistirForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExamForm.resx">
+      <DependentUpon>ExamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoadCellSettingsForm.resx">
+      <DependentUpon>LoadCellSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LogForm.resx">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\HBM.CommonAPI.6.2.0.134\build\net4\HBM.CommonAPI.targets" Condition="Exists('packages\HBM.CommonAPI.6.2.0.134\build\net4\HBM.CommonAPI.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\HBM.CommonAPI.6.2.0.134\build\net4\HBM.CommonAPI.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\HBM.CommonAPI.6.2.0.134\build\net4\HBM.CommonAPI.targets'))" />
+  </Target>
+</Project>
