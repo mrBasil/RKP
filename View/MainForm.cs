@@ -371,5 +371,11 @@ namespace RKP.View
             var LogForm = new LogForm();
             LogForm.Show();
         }
+
+        private void текучестьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var CreepsForm = new CreepsForm();
+            CreepsForm.ShowDialog();
+        }
     }
 }

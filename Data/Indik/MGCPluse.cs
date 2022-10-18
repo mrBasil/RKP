@@ -137,7 +137,7 @@ namespace RKP.Data.Indik
 
                         switch (s.Name) {
                             case "C18/500kN #00287ILL":
-                                etalon = Math.Round( value, 3);
+                                etalon = Math.Round( value*100, 3);
                                 break;
                             case "UUVZ LC":
                                 test = Math.Round( value/5, 4);
@@ -148,7 +148,7 @@ namespace RKP.Data.Indik
                     else
                     {
                         // We don't have values
-                        Console.WriteLine("No values for signal: {0}", s.Name);
+                        //Console.WriteLine("No values for signal: {0}", s.Name);
                     }
                 }
             }

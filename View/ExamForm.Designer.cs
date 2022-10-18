@@ -51,7 +51,7 @@
             // 
             // pb_1
             // 
-            this.pb_1.Location = new System.Drawing.Point(3, 0);
+            this.pb_1.Location = new System.Drawing.Point(3, 3);
             this.pb_1.Name = "pb_1";
             this.pb_1.Size = new System.Drawing.Size(766, 423);
             this.pb_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

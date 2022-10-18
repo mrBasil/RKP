@@ -98,6 +98,7 @@
     <Compile Include="Data\ComPort.cs" />
     <Compile Include="Data\DataCreator\OneComForAll.cs" />
     <Compile Include="Data\DataCreator\OneComForIndicatorOnePeref.cs" />
+    <Compile Include="Data\DataCreator\OneComForOnlyTest.cs" />
     <Compile Include="Data\DataCreator\OneMGCpluse.cs" />
     <Compile Include="Data\Indik\Indikator.cs" />
     <Compile Include="Data\Indik\KV307.cs" />
@@ -110,6 +111,7 @@
     <Compile Include="Measure\MeasError.cs" />
     <Compile Include="Measure\MeasReduceError.cs" />
     <Compile Include="Measure\MeasRKP.cs" />
+    <Compile Include="Measure\MeasureCreeps.cs" />
     <Compile Include="Measure\MeasZero.cs" />
     <Compile Include="Model\Chart\ChartSetModel.cs" />
     <Compile Include="Model\Chart\Point.cs" />
@@ -127,6 +129,12 @@
     </Compile>
     <Compile Include="View\CalkResistirForm.Designer.cs">
       <DependentUpon>CalkResistirForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CreepsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CreepsForm.Designer.cs">
+      <DependentUpon>CreepsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\ExamForm.cs">
       <SubType>Form</SubType>
@@ -172,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\CalkResistirForm.resx">
       <DependentUpon>CalkResistirForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CreepsForm.resx">
+      <DependentUpon>CreepsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\ExamForm.resx">
       <DependentUpon>ExamForm.cs</DependentUpon>

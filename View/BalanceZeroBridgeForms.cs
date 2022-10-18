@@ -36,7 +36,24 @@ namespace RKP.View
         private void btn_set_Click(object sender, EventArgs e)
         {
             var deltaR = MeasZero.GetDeltaR(test.data, LoadCell);
-            lb_itog.Text =Math.Round( deltaR, 2) + " Om";
+            lb_itog.Text = getUnitR(deltaR);
+        }
+
+        private string getUnitR(double deltaR)
+        {
+            deltaR = Math.Abs(deltaR);
+            if (deltaR > 1000 && deltaR < 1000000)
+            {
+                return Math.Round(deltaR / 1000d, 2) + "kOm";
+            }
+            else if (deltaR > 1000000)
+            {
+                return Math.Round(deltaR / 1000000d, 2) + "mOm";
+            }
+            else {
+                return Math.Round(deltaR, 2) + "Om";
+            }
+            
         }
     }
 }

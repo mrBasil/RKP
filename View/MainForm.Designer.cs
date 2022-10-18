@@ -38,6 +38,7 @@
             this.текучестьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.инструкцияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.калькРезисторовToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_test = new System.Windows.Forms.Label();
             this.lb_main = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@
             this.rbtn_3 = new System.Windows.Forms.RadioButton();
             this.rbtn_4 = new System.Windows.Forms.RadioButton();
             this.rbtn_5 = new System.Windows.Forms.RadioButton();
-            this.logToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -110,22 +110,23 @@
             // авторToolStripMenuItem
             // 
             this.авторToolStripMenuItem.Name = "авторToolStripMenuItem";
-            this.авторToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.авторToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.авторToolStripMenuItem.Text = "RKP";
             this.авторToolStripMenuItem.Click += new System.EventHandler(this.авторToolStripMenuItem_Click);
             // 
             // баланНоляToolStripMenuItem
             // 
             this.баланНоляToolStripMenuItem.Name = "баланНоляToolStripMenuItem";
-            this.баланНоляToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.баланНоляToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.баланНоляToolStripMenuItem.Text = "ZeroBalance";
             this.баланНоляToolStripMenuItem.Click += new System.EventHandler(this.баланНоляToolStripMenuItem_Click);
             // 
             // текучестьToolStripMenuItem
             // 
             this.текучестьToolStripMenuItem.Name = "текучестьToolStripMenuItem";
-            this.текучестьToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.текучестьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.текучестьToolStripMenuItem.Text = "Creeps";
+            this.текучестьToolStripMenuItem.Click += new System.EventHandler(this.текучестьToolStripMenuItem_Click);
             // 
             // инструкцияToolStripMenuItem
             // 
@@ -142,6 +143,13 @@
             this.калькРезисторовToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.калькРезисторовToolStripMenuItem.Text = "Кальк. резисторов";
             this.калькРезисторовToolStripMenuItem.Click += new System.EventHandler(this.калькРезисторовToolStripMenuItem_Click);
+            // 
+            // logToolStripMenuItem
+            // 
+            this.logToolStripMenuItem.Name = "logToolStripMenuItem";
+            this.logToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logToolStripMenuItem.Text = "Log";
+            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -327,13 +335,6 @@
             this.rbtn_5.TabStop = true;
             this.rbtn_5.Text = "5";
             this.rbtn_5.UseVisualStyleBackColor = true;
-            // 
-            // logToolStripMenuItem
-            // 
-            this.logToolStripMenuItem.Name = "logToolStripMenuItem";
-            this.logToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.logToolStripMenuItem.Text = "Log";
-            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
             // 
             // MainForm
             // 

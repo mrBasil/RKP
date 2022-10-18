@@ -54,6 +54,7 @@ namespace RKP.Controller
 
             }
 
+
             else if (prop.etalon && prop.test && !prop.peref) {
 
                 if (prop.device_e == "MGCPluse" && prop.device_t == "MGCPluse") {
@@ -61,7 +62,16 @@ namespace RKP.Controller
                 }
             }
 
-            
+            else if (!prop.etalon && prop.test && !prop.peref)
+            {
+
+                if ( prop.device_t == "KVP307")
+                {
+                    return new OneComForOnlyTest();
+                }
+            }
+
+
 
             return null;
         }
